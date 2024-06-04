@@ -44,7 +44,7 @@ class ListviewChats extends StatelessWidget {
               fontSize: 20,
             ),),
             subtitle: Text(description[index],style: TextStyle(
-              fontSize: 18
+              fontSize: 18,
             ),),
             trailing: Text(time[index]),
 
