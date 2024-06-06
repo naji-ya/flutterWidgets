@@ -40,7 +40,7 @@ class ListviewChats extends StatelessWidget {
             leading: CircleAvatar(
               backgroundImage: AssetImage(chatsImages[index]),
             ),
-            title: Text(name[index],style: TextStyle(
+            title: Text(name[index],style: const TextStyle(
               fontSize: 20,
             ),),
             subtitle: Text(description[index],style: TextStyle(

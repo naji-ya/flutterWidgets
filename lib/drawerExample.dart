@@ -20,7 +20,7 @@ title: Text("Navigation Drawer"),
       drawer: Drawer(
 
         child: ListView(
-          children: [
+          children: const [
             UserAccountsDrawerHeader(accountName: Text("Robin Singla",
             style: TextStyle(
               color: Colors.black,fontWeight: FontWeight.bold,fontSize: 25
