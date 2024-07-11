@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 class HotelPageTwo extends StatelessWidget {
+final Image image;
 
+HotelPageTwo({ required this.image});
 
 
   @override
@@ -18,13 +20,7 @@ class HotelPageTwo extends StatelessWidget {
               child: Stack(
                 children: [
                   Positioned(
-                    child: Image(
-                      height: 200,
-                      width: 500,
-                      image: AssetImage(
-                          "assets/images/hotelroom3.jpg"),
-                      fit: BoxFit.fill,
-                    ),
+                    child: image,
                   ),
                   Positioned(
                     child: Container(
@@ -80,77 +76,7 @@ class HotelPageTwo extends StatelessWidget {
               ),
 
           ),
-          Container(
-            height: 300,
-            width: 500,
-            decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(8),
-                border: Border.all(color: Colors.grey)),
-            child: Stack(
-              children: [
-                Positioned(
-                  child: Image(
-                    height: 200,
-                    width: 500,
-                    image: AssetImage(
-                        "assets/images/hotelroom2.jpg"),
-                    fit: BoxFit.fill,
-                  ),
-                ),
-                Positioned(
-                  child: Container(
-                    color: Colors.white,
-                    child: Center(child: Text("RS 40")),
-                  ),
-                  height: 30,
-                  width: 60,
-                  top: 150,
-                  left: 330,
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 220,left: 20),
-                  child: Text(
-                    "Awesom Room near Boddha",
-                    style: TextStyle(
-                      fontSize: 17,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 245,left: 190),
-                  child: Text(" Boddha,Kathamanadu"),
-                ),
-                Padding(
-                  padding: const EdgeInsets.only(top: 260),
-                  child: Row(
-                    children: [
-                      Icon(
-                        Icons.star,
-                        color: Colors.green,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.green,
-                      ),
-                      Icon(
-                        Icons.star,
-                        color: Colors.green,
-                      ),
-                      Icon(
-                        Icons.star_half_sharp,
-                        color: Colors.green,
-                      ),
-                      Text("(220 reviews)")
-                    ],
-                  ),
-                ),
 
-
-              ],
-            ),
-
-          ),
         ],
       ),
     );

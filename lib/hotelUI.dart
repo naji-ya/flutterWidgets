@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import 'hotelpage.dart';
+
 import 'hotelpage2.dart';
 
 void main() {
@@ -20,9 +20,10 @@ class HotelUI extends StatelessWidget {
       body: CustomScrollView(
         slivers: [
           SliverAppBar(
+            flexibleSpace: ,
             expandedHeight: 140,
             title: Padding(
-              padding: const EdgeInsets.only(top: 30, left: 40),
+              padding: const EdgeInsets.only(top: 40, left: 40),
               child: Text(
                 "Type your Location",
                 style: TextStyle(color: Colors.green, fontSize: 22),
@@ -123,7 +124,20 @@ class HotelUI extends StatelessWidget {
                     ),
                     Column(
                       children: [
-                        HotelPageTwo(),
+                        HotelPageTwo(image: Image(
+                          height: 200,
+                          width: 500,
+                          image: AssetImage(
+                              "assets/images/hotelroom3.jpg"),
+                          fit: BoxFit.fill,
+                        ),),
+                        HotelPageTwo(image: Image(
+                          height: 200,
+                          width: 500,
+                          image: AssetImage(
+                              "assets/images/hotelroom2.jpg"),
+                          fit: BoxFit.fill,
+                        ),),
 
 
                       ],

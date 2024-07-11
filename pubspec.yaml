@@ -47,6 +47,15 @@ dependencies:
   salomon_bottom_bar:
   expansion_tile_card:
   carousel_slider: ^4.2.1
+  animated_segmented_tab_control:
+  flutter_rating_stars:
+  google_maps_flutter:
+  status_alert:
+  liquid_progress_indicator:
+  image_picker:
+  progressive_image:
+  motion_tab_bar:
+  sizer:
 
 
 dev_dependencies:
